@@ -30,3 +30,8 @@ group :test do
   gem "machinist", ">=2.0.0.beta2"
   gem "valid_attribute", "~> 1.0.0"
 end
+
+group :production do
+  # This is for heroku - we need a javascript engine
+  gem "therubyracer-heroku"
+end
