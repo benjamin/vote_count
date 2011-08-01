@@ -29,6 +29,7 @@ group :test do
   gem "rr", "~> 1.0.2"
   gem "machinist", ">=2.0.0.beta2"
   gem "valid_attribute", "~> 1.0.0"
+  gem 'machinist', '>= 2.0.0.beta2'
 end
 
 group :production do

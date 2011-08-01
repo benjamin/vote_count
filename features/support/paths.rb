@@ -11,6 +11,10 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
 
+    when /the players page for the "([^"]*)"/
+      team = Team.find_by_name!($1)
+      team_players_path(team)
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
